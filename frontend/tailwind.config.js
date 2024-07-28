@@ -61,6 +61,11 @@ const config = {
         flowdark: "#0f111a",
         flowred: "#ff0420",
         flowdarklight: "1e1e1e",
+        color1: "#ede8f5",
+        color2: "#adbbda",
+        color3: "#8697c4",
+        color4: "#7091e6",
+        color5: "#3d52a0",
       },
       borderRadius: {
         lg: `var(--radius)`,

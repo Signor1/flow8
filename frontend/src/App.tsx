@@ -21,7 +21,7 @@ configWeb3Modal();
 
 const App = () => {
   return (
-    <main className="w-full min-h-screen bg-gray-950" id="heroPattern">
+    <main className="w-full min-h-screen bg-color1" id="heroPattern">
       <ScrollToTop />
       <Suspense fallback={<Preloader />}>
         <Routes>
