@@ -3,15 +3,15 @@ import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 export const SUPPORTED_CHAIN_ID = 1115;
 
 const sepolia = {
-  chainId: 11155111,
-  name: "Sepolia",
-  currency: "ETH",
-  explorerUrl: "https://etherscan.io",
+  chainId: SUPPORTED_CHAIN_ID,
+  name: "Core Blockchain TestNet",
+  currency: "tCORE",
+  explorerUrl: "https://scan.test.btcs.network/",
   rpcUrl: import.meta.env.VITE_RPC_URL,
 };
 
 const metadata = {
-  name: "StreamFlow",
+  name: "Flow8 Token Streaming",
   description: "A Token Streaming Application",
   url: "http://localhost:5173/", // origin must match your domain & subdomain
   icons: ["http://localhost:5173/"],
