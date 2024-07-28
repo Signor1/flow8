@@ -9,7 +9,7 @@ const DashboardFooter = () => {
     }, [year]);
 
     return (
-        <div className="w-full py-6 bg-gray-950 font-barlow font-light text-center text-sm text-gray-400">
+        <div className="w-full py-6 bg-color5 font-barlow font-light text-center text-sm text-gray-300">
             &copy;{year} StreamFlow. All Rights Reserved
         </div>
     )

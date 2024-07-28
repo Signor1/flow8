@@ -13,7 +13,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSide
     const { walletInfo } = useWalletInfo()
 
     return (
-        <header className="sticky top-0 z-[999] flex w-full bg-gray-800 rounded-lg overflow-hidden drop-shadow-1">
+        <header className="sticky top-0 z-[999] flex w-full bg-color5 rounded-lg overflow-hidden drop-shadow-1">
             <div className="flex flex-grow items-center justify-between py-4 px-4 shadow md:px-6 2xl:px-11 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-l before:from-sky-400 before:to-emerald-400">
                 <div className="flex items-center gap-3 sm:gap-4 lg:hidden">
                     {/* <!-- Hamburger Toggle BTN --> */}
@@ -67,7 +67,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSide
 
                 <div className="flex items-center gap-3 2xsm:gap-7">
                     {/* <!-- User Area --> */}
-                    <Button onClick={() => open()} className="text-gray-200 text-sm font-barlow px-4 py-2 flex justify-center items-center gap-1 bg-sky-600 hover:bg-emerald-500">
+                    <Button onClick={() => open()} className="text-gray-200 text-sm font-barlow px-4 py-2 flex justify-center items-center gap-1 bg-color4 hover:bg-emerald-500">
                         {
                             isConnected ? <WalletConnected address={address} icon={walletInfo?.icon} /> : <>
                                 <span>Connect Wallet</span>

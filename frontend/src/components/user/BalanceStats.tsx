@@ -33,7 +33,7 @@ const BalanceStats = () => {
 
     return (
         <section className="w-full grid gap-4">
-            <div className="flex flex-col gap-5 bg-gray-800 rounded-lg p-6">
+            <div className="flex flex-col gap-5 bg-color5 rounded-lg p-6">
                 <div className="w-full flex flex-col gap-1">
                     <h4 className="text-gray-300 font-barlow">Your Balance</h4>
                     <h1 className="md:text-4xl text-2xl text-emerald-500 font-belanosima font-medium">{userBalance} <span>OP</span></h1>
@@ -50,10 +50,10 @@ const BalanceStats = () => {
                                 <GiPayMoney className="text-2xl" />
                             </Button>
                         </DialogTrigger>
-                        <DialogContent className="sm:max-w-[425px] font-barlow bg-gray-800 border-gray-600">
+                        <DialogContent className="sm:max-w-[425px] font-barlow bg-color5 ">
                             <DialogHeader>
                                 <DialogTitle className="text-gray-300 font-barlow text-lg">Deposit</DialogTitle>
-                                <DialogDescription className="text-gray-500">
+                                <DialogDescription className="text-gray-200">
                                     Fund your account so as to be able to access all features.
                                 </DialogDescription>
                             </DialogHeader>
@@ -73,7 +73,7 @@ const BalanceStats = () => {
                             </div>
                             <DialogFooter>
                                 <DialogClose asChild>
-                                    <Button type="button" onClick={handleDeposit} className="text-gray-100 text-sm font-barlow px-4 py-2 flex justify-between items-center gap-1 bg-sky-500 hover:bg-emerald-500 disabled:cursor-not-allowed">Deposit</Button>
+                                    <Button type="button" onClick={handleDeposit} className="text-gray-100 text-sm font-barlow px-4 py-2 flex justify-between items-center gap-1 bg-color3 hover:bg-emerald-500 disabled:cursor-not-allowed">Deposit</Button>
                                 </DialogClose>
                             </DialogFooter>
                         </DialogContent>
@@ -81,21 +81,21 @@ const BalanceStats = () => {
 
                     <Dialog >
                         <DialogTrigger asChild>
-                            <Button className="text-gray-100 text-sm font-barlow px-4 py-2 flex justify-between items-center gap-1 bg-sky-500 hover:bg-sky-700">
+                            <Button className="text-gray-100 text-sm font-barlow px-4 py-2 flex justify-between items-center gap-1 bg-color4 hover:bg-color3">
                                 <span>Withdraw</span>
                                 <BiMoneyWithdraw className="text-2xl" />
                             </Button>
                         </DialogTrigger>
-                        <DialogContent className="sm:max-w-[425px] font-barlow bg-gray-800 border-gray-600">
+                        <DialogContent className="sm:max-w-[425px] font-barlow bg-color5">
                             <DialogHeader>
                                 <DialogTitle className="text-gray-300 font-barlow text-lg">Withdraw</DialogTitle>
-                                <DialogDescription className="text-gray-500">
+                                <DialogDescription className="text-gray-200">
                                     You can always withdraw your funds. However, your funds enables to access all features.
                                 </DialogDescription>
                             </DialogHeader>
                             <div className="grid py-2">
                                 <div className="relative w-full font-barlow">
-                                    <label className="text-gray-300 text-sm ml-1 mb-1">Enter Amount of Token</label>
+                                    <label className="text-gray-200 text-sm ml-1 mb-1">Enter Amount of Token</label>
                                     <input
                                         type="number"
                                         name={"amount"}
@@ -108,7 +108,7 @@ const BalanceStats = () => {
                             </div>
                             <DialogFooter>
                                 <DialogClose asChild>
-                                    <Button onClick={handleWithdraw} type="submit" className="text-gray-100 text-sm font-barlow px-4 py-2 flex justify-between items-center gap-1 bg-sky-500 hover:bg-emerald-500 disabled:cursor-not-allowed">Withdraw</Button>
+                                    <Button onClick={handleWithdraw} type="submit" className="text-gray-100 text-sm font-barlow px-4 py-2 flex justify-between items-center gap-1 bg-color3 hover:bg-emerald-500 disabled:cursor-not-allowed">Withdraw</Button>
                                 </DialogClose>
                             </DialogFooter>
                         </DialogContent>

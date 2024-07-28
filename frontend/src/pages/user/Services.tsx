@@ -10,8 +10,8 @@ const Services = () => {
     return (
         <main className="w-full h-full flex flex-col gap-4 mt-8 ml-2">
             <div className="w-full flex flex-col gap-2">
-                <h1 className="md:text-4xl text-2xl text-gray-300 font-belanosima">Choose Your Service</h1>
-                <p className="text-gray-400 font-barlow md:text-lg lg:w-[70%] md:w-[80%] w-full">As a registered user, you now have access to our range of services designed to streamline your financial transactions. Please select the service you're interested in:</p>
+                <h1 className="md:text-4xl text-2xl text-color5 font-belanosima">Choose Your Service</h1>
+                <p className="text-gray-500 font-barlow md:text-lg lg:w-[70%] md:w-[80%] w-full">As a registered user, you now have access to our range of services designed to streamline your financial transactions. Please select the service you're interested in:</p>
             </div>
             <section className="w-full grid md:grid-cols-2 justify-center gap-8 mt-6 pr-4 lg:px-24">
                 {

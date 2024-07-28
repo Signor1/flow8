@@ -58,11 +58,11 @@ const CreateSubscription = () => {
     return (
         <main className="w-full h-full flex flex-col gap-4 mt-8 ml-2 pr-4">
             <div className="w-full flex flex-col gap-2">
-                <h1 className="md:text-4xl text-2xl text-gray-300 font-belanosima">Subscription Setup</h1>
-                <p className="text-gray-400 font-barlow md:text-lg lg:w-[70%] md:w-[80%] w-full">Effortlessly manage your employee salaries with precision and ease using StreamFlow's Salary Distribution Setup</p>
+                <h1 className="md:text-4xl text-2xl text-color5 font-belanosima">Subscription Setup</h1>
+                <p className="text-gray-500 font-barlow md:text-lg lg:w-[70%] md:w-[80%] w-full">Effortlessly manage your employee salaries with precision and ease using StreamFlow's Salary Distribution Setup</p>
             </div>
             <section className="w-full flex flex-col my-4 gap-3">
-                <h3 className="md:text-xl text-lg text-gray-300 font-belanosima">Available Subscription Services</h3>
+                <h3 className="md:text-xl text-lg text-gray-500 font-belanosima">Available Subscription Services</h3>
                 <main className="w-full grid grid-cols-2 gap-8">
                     {
                         plans?.map((plan: any) => (

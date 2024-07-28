@@ -2,7 +2,6 @@
 import { NavLinks } from "@/cms/UserSideLinks";
 import { useCallback, useEffect, useRef } from "react";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import { SiStreamrunners } from "react-icons/si";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import SideBarDropdown from "./SideBarDropdown";
 import { RiArrowDownSFill, RiFundsLine } from "react-icons/ri";
@@ -16,6 +15,7 @@ import { IoCreateOutline } from "react-icons/io5";
 import { HiOutlineViewfinderCircle } from "react-icons/hi2";
 import { useCheckRegisteredUser } from "@/hooks/useCheckRegisteredUser";
 import { useWeb3ModalAccount } from "@web3modal/ethers/react";
+import { TbCircle8Filled } from "react-icons/tb";
 
 
 const SideBar = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
@@ -90,15 +90,15 @@ const SideBar = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSid
     return (
         <aside
             ref={sidebar}
-            className={`absolute font-barlow left-0 top-0 z-[9999] flex h-screen w-72 flex-col overflow-y-hidden bg-gray-800 duration-300 ease-linear lg:static lg:translate-x-0 rounded-lg ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+            className={`absolute font-barlow left-0 top-0 z-[9999] flex h-screen w-72 flex-col overflow-y-hidden bg-gradient-to-b from-color5 to-color4 duration-300 ease-linear lg:static lg:translate-x-0 rounded-lg ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}
         >
             {/* <!-- SIDEBAR HEADER --> */}
             <div className='flex flex-col gap-2 font-barlow px-6 py-8 lg:py-6.5'>
                 <div className="flex items-center justify-between gap-2  ">
-                    <Link to='/user' className="flex items-center bg-gradient-to-r from-sky-400 to-emerald-400 text-transparent bg-clip-text gap-1">
-                        <SiStreamrunners className="md:text-4xl text-3xl text-sky-400" />
-                        <span className=" font-belanosima md:text-xl text-lg">TRiver</span>
+                    <Link to='/user' className="flex items-center bg-gradient-to-r from-color1 to-color2 text-transparent bg-clip-text">
+                        <span className=" font-belanosima md:text-xl text-xl">Flow</span>
+                        <TbCircle8Filled className="md:text-2xl text-2xl text-color2" />
                     </Link>
 
                     <button
@@ -133,7 +133,7 @@ const SideBar = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSid
                                             link.url ?
                                                 <NavLink
                                                     to={link.url}
-                                                    className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 text-gray-300 duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:w-0.5 before:transition-all before:duration-200  before:bg-emerald-400 hover:before:h-full ${pathname === link.url ?
+                                                    className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 text-gray-200 duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:w-0.5 before:transition-all before:duration-200  before:bg-emerald-400 hover:before:h-full ${pathname === link.url ?
                                                         'before:h-full' : 'before:h-0'
                                                         }`} onClick={handleCloseSideBar}
                                                 >
@@ -143,13 +143,13 @@ const SideBar = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSid
                                                 : <SideBarDropdown className="w-full">
                                                     {(handleClick, open) => (
                                                         <div className='w-full'>
-                                                            <span className='group cursor-pointer relative flex items-center gap-2.5 rounded-sm py-2 px-4 text-gray-300 duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:w-0.5 before:transition-all before:duration-200  before:bg-emerald-400 hover:before:h-full'
+                                                            <span className='group cursor-pointer relative flex items-center gap-2.5 rounded-sm py-2 px-4 text-gray-200 duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:w-0.5 before:transition-all before:duration-200  before:bg-emerald-400 hover:before:h-full'
                                                                 onClick={() =>
                                                                     handleClick()
                                                                 }>
                                                                 {renderDropdownCaptionIcons(index)}
                                                                 {link.name}
-                                                                <span className={`absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 ${open && 'rotate-180'
+                                                                <span className={`absolute right-4 top-1/2 -translate-y-1/2 text-gray-200 ${open && 'rotate-180'
                                                                     }`}>
                                                                     <RiArrowDownSFill className="text-xl" />
                                                                 </span>
@@ -164,7 +164,7 @@ const SideBar = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSid
                                                                         link?.subLinks?.map((sublink, index) => (
                                                                             <li key={index}>
                                                                                 <NavLink onClick={handleCloseSideBar}
-                                                                                    to={sublink.url} className={`group relative flex items-center gap-2 rounded-sm py-1 text-sm px-4 text-gray-400 duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:w-0.5 before:transition-all before:duration-200  before:bg-emerald-400 hover:before:h-full ${pathname === sublink.url || pathname.includes(sublink.url) ?
+                                                                                    to={sublink.url} className={`group relative flex items-center gap-2 rounded-sm py-1 text-sm px-4 text-gray-200 duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:w-0.5 before:transition-all before:duration-200  before:bg-emerald-400 hover:before:h-full ${pathname === sublink.url || pathname.includes(sublink.url) ?
                                                                                         'before:h-full' : 'before:h-0'
                                                                                         }`}>
                                                                                     {renderDropdownIcons(index)}
@@ -189,10 +189,10 @@ const SideBar = ({ sidebarOpen, setSidebarOpen }: { sidebarOpen: boolean, setSid
                     </div>
                     {/* <!-- Sidebar Footer --> */}
                     <div className="w-full flex flex-col justify-center items-start ml-8 gap-1.5 mt-8">
-                        <div className="w-[30%] rounded-lg overflow-hidden border-2 border-gray-400">
+                        <div className="w-[30%] rounded-lg overflow-hidden border-2 border-gray-200">
                             <img src={`https://github.com/shadcn.png`} alt="avatar" className="w-full h-full object-cover" />
                         </div>
-                        <h3 className="text-gray-400 text-base ml-2 font-barlow">{user?.name}</h3>
+                        <h3 className="text-gray-200 text-base ml-2 font-barlow">{user?.name}</h3>
                     </div>
 
                 </nav>

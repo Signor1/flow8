@@ -20,7 +20,7 @@ const UserLayout = () => {
 
     const { isConnected } = useWeb3ModalAccount()
 
-    return isConnected ? (<div className=" bg-gray-950 font-sansource lg:p-3" >
+    return isConnected ? (<div className=" bg-color1 font-sansource lg:p-3" >
         {/* Page Wrapper Start  */}
         <div className="flex h-screen gap-3 overflow-hidden">
             {/* Sidebar Start */}
