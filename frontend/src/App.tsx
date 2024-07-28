@@ -4,9 +4,6 @@ import ScrollToTop from "./utils/ScrollToTop";
 import Preloader from "./utils/Preloader";
 import ScrollToTopButton from "./utils/ScrollToTopButton";
 import PageNotFound from "./utils/PageNotFound";
-// import { ToastContainer } from "react-toastify";
-//react-toastify css
-// import "react-toastify/dist/ReactToastify.css";
 
 import { lazy } from "react";
 import { admin_routes, guest_routes, user_routes } from "./routes";
@@ -21,7 +18,7 @@ configWeb3Modal();
 
 const App = () => {
   return (
-    <main className="w-full min-h-screen bg-color1" id="heroPattern">
+    <main className="w-full min-h-screen bg-color1">
       <ScrollToTop />
       <Suspense fallback={<Preloader />}>
         <Routes>

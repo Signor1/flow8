@@ -21,18 +21,18 @@ export const GeminiEffect = ({
 }) => {
     return (
         <div className={cn("sticky top-80", className)}>
-            <p className="text-2xl md:text-7xl font-belanosima pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
+            <p className="text-2xl md:text-7xl font-belanosima pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-color5 to-color4">
                 {title || `Build with Aceternity UI`}
             </p>
-            <p className="text-base md:text-xl font-barlow text-center text-neutral-400  max-w-lg mx-auto">
+            <p className="text-base md:text-xl font-barlow text-center text-color3  max-w-lg mx-auto">
                 {description ||
                     `Scroll this component and see the bottom SVG come to life wow this
         works!`}
             </p>
             <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
-                <button className="flex items-center gap-1 bg-gradient-to-r from-sky-400 to-emerald-400 rounded-full md:px-7 md:py-3 px-2 py-1 md:mt-28 mt-8 z-30 md:text-base text-gray-800 text-xs  w-fit mx-auto ">
+                <button className="flex items-center gap-1 bg-gradient-to-r from-color4 to-color5 rounded-full md:px-7 md:py-3 px-2 py-1 md:mt-28 mt-8 z-30 md:text-base text-gray-100 text-xs  w-fit mx-auto ">
                     <SiStreamrunners className="md:text-2xl text-lg" />
-                    <span className=" font-belanosima">TRiver</span>
+                    <span className=" font-belanosima">Flow8</span>
                 </button>
             </div>
             <svg
