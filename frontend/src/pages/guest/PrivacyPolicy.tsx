@@ -77,28 +77,28 @@ const PrivacyPolicy = () => {
     ]
     return (
         <main className="relative min-h-screen flex flex-col">
-            <Button onClick={() => navigate('/')} className="bg-sky-500 text-white rounded-md p-3 hover:bg-sky-600 transition duration-300 focus:outline-none absolute top-8 left-8">
+            <Button onClick={() => navigate('/')} className="bg-color5 text-white rounded-md p-3 hover:bg-color4 transition duration-300 focus:outline-none absolute top-8 left-8">
                 <IoIosArrowRoundBack className="text-2xl" />
             </Button>
 
             <section className="w-full flex text-gray-300 flex-col pt-28 lg:px-20 md:px-12 px-4">
-                <h1 className="text-gray-300 text-2xl md:text-3xl lg:text-5xl tracking-wider  font-belanosima">Privacy Policy</h1>
+                <h1 className="text-color5 text-2xl md:text-3xl lg:text-5xl tracking-wider  font-belanosima">Privacy Policy</h1>
 
                 <div className="mt-7 mb-20">
                     <div>
-                        <p className="font-barlow text-gray-400  text-sm md:text-lg"><span className="bg-gradient-to-r from-sky-400 font-belanosima to-emerald-400 text-transparent bg-clip-text">TRiver</span> is committed to protecting the privacy and security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our token streaming application.</p>
+                        <p className="font-barlow text-gray-500  text-sm md:text-lg"><span className="bg-gradient-to-r from-color5 font-belanosima to-color4 text-transparent bg-clip-text">Flow8</span> is committed to protecting the privacy and security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our token streaming application.</p>
 
                         <div>
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">Informations We Collect</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">Informations We Collect</h2>
 
                             <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
                                 {
                                     features.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text}</p>
                                         </li>
                                     ))
                                 }
@@ -106,16 +106,16 @@ const PrivacyPolicy = () => {
                         </div>
 
                         <div className="mt-7">
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">How We Use Your Information</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">How We Use Your Information</h2>
 
-                            <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
+                            <ul className="flex flex-col gap-2 text-gray-500 font-barlow">
                                 {
                                     features2.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text}</p>
                                         </li>
                                     ))
                                 }
@@ -123,16 +123,16 @@ const PrivacyPolicy = () => {
                         </div>
 
                         <div className="mt-7">
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">Data Security</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">Data Security</h2>
 
-                            <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
+                            <ul className="flex flex-col gap-2 text-gray-500 font-barlow">
                                 {
                                     features3.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text}</p>
                                         </li>
                                     ))
                                 }
@@ -140,16 +140,16 @@ const PrivacyPolicy = () => {
                         </div>
 
                         <div className="mt-7">
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">Your Rights and Choices</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">Your Rights and Choices</h2>
 
-                            <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
+                            <ul className="flex flex-col gap-2 text-gray-500 font-barlow">
                                 {
                                     features4.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text}</p>
                                         </li>
                                     ))
                                 }
@@ -157,16 +157,16 @@ const PrivacyPolicy = () => {
                         </div>
 
                         <div className="mt-7">
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">Changes to this Privacy Policy</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">Changes to this Privacy Policy</h2>
 
                             <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
                                 {
                                     features5.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text}</p>
                                         </li>
                                     ))
                                 }
@@ -174,16 +174,16 @@ const PrivacyPolicy = () => {
                         </div>
 
                         <div className="mt-7">
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">Children's Privacy</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">Children's Privacy</h2>
 
-                            <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
+                            <ul className="flex flex-col gap-2 text-gray-500 font-barlow">
                                 {
                                     features7.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text}</p>
                                         </li>
                                     ))
                                 }
@@ -191,16 +191,16 @@ const PrivacyPolicy = () => {
                         </div>
 
                         <div className="mt-7">
-                            <h2 className="mt-5 font-belanosima text-gray-200 text-lg md:text-2xl lg:text-3xl">Contact</h2>
+                            <h2 className="mt-5 font-belanosima text-color5 text-lg md:text-2xl lg:text-3xl">Contact</h2>
 
-                            <ul className="flex flex-col gap-2 text-gray-400 font-barlow">
+                            <ul className="flex flex-col gap-2 text-gray-500 font-barlow">
                                 {
                                     features6.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
-                                            <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text} <span className="text-blue-500 cursor-pointer"><a href="mailto:team.triverstream@gmail.com">team.triverstream@gmail.com</a></span></p>
+                                            <p className="text-gray-500"><span className="text-gray-500 font-belanosima">{caption}:</span> {text} <span className="text-color4 cursor-pointer"><a href="mailto:team.Flow8stream@gmail.com">team.Flow8stream@gmail.com</a></span></p>
                                         </li>
                                     ))
                                 }
@@ -211,7 +211,7 @@ const PrivacyPolicy = () => {
                                 {
                                     features7.map(({ caption, text }, index) => (
                                         <li key={index} className="flex mt-2 items-start gap-2">
-                                            <span className="text-emerald-400 mt-1.5">
+                                            <span className="text-color4 mt-1.5">
                                                 <GiStarShuriken />
                                             </span>
                                             <p className="text-gray-400"><span className="text-gray-300 font-belanosima">{caption}:</span> {text}</p>
@@ -219,8 +219,8 @@ const PrivacyPolicy = () => {
                                     ))
                                 }
                             </ul>  */}
-                                <p className="font-belanosima text-gray-200 text-lg">Last Update: <span className="font-barlow text-gray-400 text-base">01-05-2024</span></p>
-                                <p className="font-belanosima flex mt-1 text-lg gap-2">Thank You for using <span onClick={() => navigate('/')} className="bg-gradient-to-r from-sky-400 cursor-pointer to-emerald-400 font-belanosima text-transparent mt-1 text-3xl bg-clip-text">TRiver</span></p>
+                                <p className="font-belanosima text-color5 text-lg">Last Update: <span className="font-barlow text-gray-500 text-base">01-05-2024</span></p>
+                                <p className="font-belanosima flex mt-1 text-lg gap-2">Thank You for using <span onClick={() => navigate('/')} className="bg-gradient-to-r from-color5 cursor-pointer to-color4 font-belanosima text-transparent mt-1 text-3xl bg-clip-text">Flow8</span></p>
                             </div>
                         </div>
 

@@ -45,7 +45,7 @@ const ContactForm = () => {
                             type={field === "message" ? "" : "text"}
                             as={field === "message" ? "textarea" : ""}
                             id={field}
-                            className={`block w-full rounded-md border text-sm px-3 py-2 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-900 border-gray-700 focus-visible:ring-sky-400 font-barlow text-gray-200 ${field === "message" ? "h-[100px] resize-y" : "h-10 "}`}
+                            className={`block w-full rounded-md border text-sm px-3 py-2 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 disabled:cursor-not-allowed disabled:opacity-50 bg-color5 border-color3 focus-visible:ring-color4 font-barlow text-gray-200 ${field === "message" ? "h-[100px] resize-y" : "h-10 "}`}
                             name={field}
                             placeholder={`Enter your ${field}`}
                         />
@@ -55,7 +55,7 @@ const ContactForm = () => {
 
                 <Button
                     type="submit"
-                    className={`text-gray-100 text-sm mt-6 font-barlow px-4 py-2 flex justify-center items-center gap-1 bg-sky-500 hover:bg-emerald-500 ${isSending ? "opacity-50 cursor-not-allowed" : ""}`}
+                    className={`text-gray-100 text-sm mt-6 font-barlow px-4 py-2 flex justify-center items-center gap-1 bg-color4 hover:bg-color3 ${isSending ? "opacity-50 cursor-not-allowed" : ""}`}
                     disabled={isSending}
                 >
                     {

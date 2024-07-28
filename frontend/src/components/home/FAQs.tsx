@@ -4,14 +4,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "..
 const FAQs = () => {
     return (
         <main className='w-full flex flex-col items-center lg:my-24 my-12 lg:px-20 md:px-16 px-4'>
-            <h1 className="md:text-4xl text-2xl text-gray-200 font-belanosima">Frequently Asked Questions</h1>
-            <p className="text-gray-400 font-barlow text-center md:w-[50%]">Have questions? We have answers!</p>
+            <h1 className="md:text-4xl text-2xl text-color5 font-belanosima">Frequently Asked Questions</h1>
+            <p className="text-gray-500 font-barlow text-center md:w-[50%]">Have questions? We have answers!</p>
 
-            <section className="lg:w-[80%] md:w-[85%] w-full bg-gray-900 rounded-md md:px-8 md:py-6 p-4 mt-12">
+            <section className="lg:w-[80%] md:w-[85%] w-full bg-color5 rounded-md md:px-8 md:py-6 p-4 mt-12">
                 <Accordion type="single" collapsible className="w-full font-barlow text-gray-100">
                     {
                         faqs.map(({ question, answer }, index) => (
-                            <AccordionItem value={`item-${index}`} className=" last:border-none border-gray-700 py-2" key={index}>
+                            <AccordionItem value={`item-${index}`} className=" last:border-none border-color3 py-2" key={index}>
                                 <AccordionTrigger className="md:text-base text-start text-gray-200 ">{question}</AccordionTrigger>
                                 <AccordionContent className="text-gray-400 text-base">
                                     {answer}
